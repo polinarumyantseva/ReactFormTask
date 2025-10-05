@@ -1,0 +1,21 @@
+#root {
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: 2rem;
+	text-align: center;
+}
+
+.form-container {
+	width: 500px;
+	background: #fff;
+	padding: 32px;
+	border-radius: 10px;
+	color: #333;
+	box-shadow: 0 0 30px 0 hsl(0deg 0% 100% / 25%);
+}
+
+h1 {
+	margin-top: 0;
+	font-size: 3.2em;
+	line-height: 1.1;
+}
