@@ -9,20 +9,16 @@ export const App = () => {
 		setIsUserExist((prev) => !prev);
 	};
 
-	const handleSigninSubmit = (data: SigninFormDataProps) => {
-		console.log('Signin data:', data);
-	};
-
-	const handleSignupSubmit = (data: SignupFormDataProps) => {
-		console.log('Signup data:', data);
+	const handleSubmit = (data: SigninFormDataProps | SignupFormDataProps) => {
+		console.log('Data:', data);
 	};
 
 	return (
 		<div className='form-container'>
 			{isUserExist ? (
-				<Signin onSubmit={handleSigninSubmit} onToggleForm={handleToggleForm} />
+				<Signin onSubmit={handleSubmit} onToggleForm={handleToggleForm} />
 			) : (
-				<Signup onSubmit={handleSignupSubmit} onToggleForm={handleToggleForm} />
+				<Signup onSubmit={handleSubmit} onToggleForm={handleToggleForm} />
 			)}
 		</div>
 	);
